@@ -1,6 +1,11 @@
 import 'package:donutui/utils/my_tab.dart';
 import 'package:flutter/material.dart';
 
+import '../tabs/burger.dart';
+import '../tabs/donut.dart';
+import '../tabs/pancake.dart';
+import '../tabs/pizza.dart';
+
  class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
 
@@ -76,7 +81,17 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             const SizedBox(height: 25,),
-            TabBar(tabs: myTabs)
+            TabBar(tabs: myTabs),
+
+            Expanded(
+              child:TabBarView(
+                children:[
+                  Donut(),
+                  Burger(),
+                  Pancakes(),
+                  Pizza(),
+                ] )
+               ),
             
     
           ],
