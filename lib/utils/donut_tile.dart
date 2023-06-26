@@ -52,7 +52,7 @@ final String imageloc;
             style: const TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.bold,
-              fontSize: 16,
+              fontSize: 14,
             ),
             ),
             // const SizedBox(height: 10,),
